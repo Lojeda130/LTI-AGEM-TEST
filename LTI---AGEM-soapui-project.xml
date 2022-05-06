@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a54d8736-bfa9-4fb1-89d8-87d9e648395d" activeEnvironment="Default" name="LTI - AGEM" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="true"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TS:Prueba"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="true"/>
+</xml-fragment>]]></con:setting></con:settings><con:testSuite id="2e09ce4a-6f0a-443c-a9b2-e74bcb13d001" name="TS:Usuarios"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="aa1b2607-cff2-4099-8164-f68f08b69651" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ValidacionID" searchProperties="true"><con:settings/><con:testStep type="graphqltestrequest" name="S1:ValidacionID" id="4876139c-571e-482d-9792-d0774e788fa2"><con:settings/><con:config xsi:type="con:GraphQLTestRequest" id="f0d7a026-64b7-4a53-a877-9a37b710c6d8" name="S1:ValidacionID" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-hasura-admin-secret" value="Vu0mNI77rXwF1CSmqpyc4s2M0s81yNqJ3D6QHrlOTVhbUrJofpN23gebq6zqij1y" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://lti-equipamiento.hasura.app/v1/graphql</con:endpoint><con:request>{"query":"query MyQuery {\n  data_usuario {\n    id\n    mail\n  }\n}\n","operationName":null,"variables":null}</con:request><con:assertion type="Simple Contains" id="eaf7b813-07a3-47b1-80db-f59b7a56bbbc" name="Verificar id"><con:configuration><token>6233a4449e63f5006839b37f"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="768d44a6-e06c-4f20-aed8-d9fc7ea8f419" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ValidacionEMAIL" searchProperties="true"><con:settings/><con:testStep type="graphqltestrequest" name="S1:ValidacionEmail" id="2d2bab8e-1b44-424c-adc5-bbbcea69952c"><con:settings/><con:config xsi:type="con:GraphQLTestRequest" id="f0d7a026-64b7-4a53-a877-9a37b710c6d8" name="S1:ValidacionEmail" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-hasura-admin-secret" value="Vu0mNI77rXwF1CSmqpyc4s2M0s81yNqJ3D6QHrlOTVhbUrJofpN23gebq6zqij1y" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://lti-equipamiento.hasura.app/v1/graphql</con:endpoint><con:request>{"query":"query MyQuery {\n  data_usuario {\n    id\n    mail\n  }\n}\n","operationName":null,"variables":null}</con:request><con:assertion type="Simple Contains" id="bed23c73-b18c-422d-acaa-ff9de087fb9c" name="Verificar mail"><con:configuration><token>test4@test.test</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f4defd0e-fd72-4e57-be62-aad871a5b278" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ValidacionIDFallo" searchProperties="true"><con:settings/><con:testStep type="graphqltestrequest" name="S1:ValidacionIDFallo" id="f9b16e17-e0d2-4a88-b0b7-d14b43dbe344"><con:settings/><con:config xsi:type="con:GraphQLTestRequest" id="c4307bb2-3ac4-4fa5-b793-36cf87e88192" name="S1:ValidacionIDFallo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-hasura-admin-secret" value="Vu0mNI77rXwF1CSmqpyc4s2M0s81yNqJ3D6QHrlOTVhbUrJofpN23gebq6zqij1y" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://lti-equipamiento.hasura.app/v1/graphql</con:endpoint><con:request>{"query":"query MyQuery {\n  data_usuario {\n    id\n  }\n}\n","operationName":null,"variables":null}</con:request><con:assertion type="Simple Contains" id="e2bc1a46-e9bf-4774-861b-fbad52caccf8" name="Contains"><con:configuration><token>Idfalso123</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
